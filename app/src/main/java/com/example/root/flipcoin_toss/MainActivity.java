@@ -99,7 +99,6 @@ public class MainActivity extends Activity implements SensorEventListener{
             boolean accelSupported = sensorMgr.registerListener(this, sensorMgr.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_GAME);
 
             if (!accelSupported) {
-                // on accelerometer on this device
                 sensorMgr.unregisterListener(this, sensorMgr.getDefaultSensor(Sensor.TYPE_ACCELEROMETER));
             }
         }
@@ -118,7 +117,6 @@ public class MainActivity extends Activity implements SensorEventListener{
                 float speed = Math.abs(x+y+z - last_x - last_y - last_z)
                         / diffTime * 10900;
                 if (speed > SHAKE_THRESHOLD) {
-                    // yes, this is a shake action! Do something about it!
                     isShaked = true;
                     int a = r.nextInt(2);
 
