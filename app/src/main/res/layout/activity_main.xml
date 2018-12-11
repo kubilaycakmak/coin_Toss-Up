@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/body"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100sp"/>
+    <Button
+        android:id="@+id/down"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/downarrow"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/coin"/>
+
+</RelativeLayout>
